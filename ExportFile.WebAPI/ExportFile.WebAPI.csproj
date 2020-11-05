@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UploadExcel\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExportFile.Repository\ExportFile.Repository.csproj" />
+    <ProjectReference Include="..\ExportFile.Service\ExportFile.Service.csproj" />
+  </ItemGroup>
+
+</Project>
